@@ -1,0 +1,960 @@
+*{
+	margin: 0px;
+}
+
+/*----------------------------------------------css variables start----------------------------------------------*/
+:root{
+	--text-color-white:white;
+}
+:root{
+	--text-color-black:black;
+}
+:root{
+	--website-background:#0b1026;
+}
+:root{
+	--player-color:#141833;
+}
+/*----------------------------------------------css variables end----------------------------------------------*/
+
+body{
+	background-color: var(--website-background);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 95vw;
+}
+/*----------------------------------------------common classes start----------------------------------------------*/
+.text-style{
+	color: var(--text-color-white);
+	font-family: sans-serif;
+}
+.text-style2{
+	color: var(--text-color-black);
+	font-family: sans-serif;
+}
+.inline{
+	display: inline-block;
+}
+.color-gray{
+	color: gray;
+}
+.color-white{
+	color: var(--text-color-white);
+}
+.color-lightgray{
+	color:lightgray;
+}
+.align-center{
+	text-align: center;
+}
+.heading{
+	margin-left: 1%;
+}
+/*----------------------------------------------common classes end----------------------------------------------*/
+
+/*----------------------------------------------header section start----------------------------------------------*/
+
+header{
+	width: 100vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	/*background-color: #141833;*/
+}
+/*----------------------------------------------left-hrader start----------------------------------------------*/
+.logo{
+	font-size: 2.5rem;
+	color: white;
+}
+
+.left-header-list{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+}
+.left-header-list li img{
+	height: 60px;
+	width: auto;
+	/*margin-right: 3rem;*/
+}
+.left-header-list li{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.left-header-list li a{
+	text-decoration: none;
+	margin-left: 3.5rem;
+	color: var(--text-color-white);
+	font-size: small;
+}
+
+.left-header-list li a:hover{
+	color: red;
+	transition-duration: 0.5s;
+}
+
+/*----------------------------------------------right header start----------------------------------------------*/
+
+.right-header-list{
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.right-header-list li{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.right-header-list li:nth-child(2n){
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.right-header-list li img{
+	height: 45px;
+	width: auto;
+	border-radius: 50%;
+	margin-right: 3rem;
+}
+
+.right-header-list li input{
+	padding-left: 70px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 10px;
+	background-color: var(--player-color);
+	color: rgb(207 208 209);
+	border: 0.5px solid brown;
+
+}
+
+.fa-search{
+	position: absolute;
+	color: white;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+
+.fa-microphone{
+	position: absolute;
+	color: white;
+	margin-top: 8px;
+	margin-left: -20px;
+}
+.fa-microphone:hover ,.fa-search:hover{
+	color: red;
+	transition-duration: 0.5s;
+}
+.right-header-list li .fa-bell{
+	color: white;
+	font-size: 1.5rem;
+}
+.right-header-list li .fa-bell:hover{
+	color: red;
+	transition-duration: 0.5s;
+}
+
+
+/*----------------------------------------------right-header end----------------------------------------------*/
+
+/*----------------------------------------------right-section start----------------------------------------------*/
+.right-section{
+	width: 60vw;
+	margin: auto;
+}
+/*----------------------------------------------right-section end----------------------------------------------*/
+/*----------------------------------------------most-played start----------------------------------------------*/
+main{
+	width: 100%;
+}
+.most-played{
+	height: 50vh;
+	width: 100%;
+	position: relative;
+	align-content: center;
+}
+.basic{
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	transition: all 0.2s;
+	margin-top: 5%;
+	margin-left: 25%;
+	margin-right: 20%;
+}
+
+.top1{
+	background-image: url(music-covers/cover3.jpg);
+	background-size: contain;
+	background-position: center;
+	height: 70%;
+	width: 50%;
+	box-shadow: 3px 3px 6px 2px #222226;
+	transform: translateZ(20px) translateX(120px) translateY(20px);
+}
+
+
+.top1:hover{
+	transition: all 0.6s ease-in-out;
+	transform: translateX(80px) translateZ(100px) scale(1.1, 1.1);
+	position: absolute;
+	z-index: 1;
+}
+
+.top2{
+	background-image: url(music-covers/cover2.jpg);
+	background-size: contain;
+	background-position: center;
+	height: 70%;
+	width: 50%;
+	box-shadow: 3px 3px 6px 2px #222226;
+	transform: translateZ(20px) translateX(-120px) translateY(20px);
+}
+
+.top2:hover{
+	transition: all 0.6s ease-in-out;
+	transform: translateX(-80px) translateZ(100px) scale(1.1, 1.1);
+	position: absolute;
+	z-index: 1;
+}
+
+.top3{
+	background-image: url(music-covers/cover1.jpg);
+	background-size: contain;
+	background-position: center;
+	height: 70%;
+	width: 50%;
+	box-shadow: 3px 3px 6px 2px #222226;
+	transform: translateZ(20px) scale(1.1, 1.1);
+}
+
+.top3:hover{
+	transition: all 0.4s ease-in-out;
+	transform: translateZ(30px) scale(1.15, 1.15);
+	position: absolute;
+	z-index: 1;
+}
+
+/*----------------------------------------------most-played end----------------------------------------------*/
+
+/*----------------------------------------------latest-relese start----------------------------------------------*/
+.latest-release{
+	position: relative;
+	height: 60vh;
+	width: 100%;
+}
+.box-container{
+	height: 85%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-around;
+	align-content: center;
+}
+.box{
+	height: 40%;
+	width: 40%;
+	margin-left: 2.5%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.box img{
+	height: 90px;
+	width: 80px;
+}
+.box img:hover{
+	opacity: 0.6;
+}
+.left-table{
+	width: 50%;
+	position: flex-start;
+}
+.left-table a{
+	text-decoration:none;
+}
+.fa-ellipsis-h{
+	color: white;
+}
+.release-date{
+	margin-top: -2.5rem;
+	margin-left: -.2rem;
+	font-size: 0.9rem;
+}
+.duration{
+	margin-right:.3rem;
+	font-size: 0.8rem;
+}
+.dropbtn {
+
+  	border: none;
+  	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: var();
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 165px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/*----------------------------------------------latest-relese end----------------------------------------------*/
+
+/*----------------------------------------------popular-artist start----------------------------------------------*/
+.popular-artist{
+	height: 30vh;
+	width: 100%;
+}
+.artist-container{
+	height: 85%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.image-size{
+	background-position: center;
+	background-size: contain,cover;
+	background-repeat: no-repeat;
+}
+.ed-sheeran{
+	content: url(images/ed-sheeran.jpg);
+}
+.coldplay{
+	content: url(images/coldplay.png);
+}
+.zayn{
+	content: url(images/zayn.jpg);
+}
+.charlie-puth{
+	content: url(images/charlie-puth.jpg);
+}
+.imagine-dragon{
+	content: url(images/imagine-dragon.jpg);
+}
+.bruno-mars{
+	content: url(images/bruno-mars.jpg);
+}
+.artist{
+	height: 80%;
+	width:14%;
+	margin-left: 1rem;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.artist a{
+	margin-left: 20%;
+	text-decoration:none;
+}
+.artist img{
+	width: 100%;
+	height: 90%;
+	border-radius: 50%;
+
+}
+.play-button{
+	border-radius: 50%;
+	height: 18.3%;
+	width: 9%;
+	margin-left: -4px;
+	margin-bottom: 6px;
+	position: absolute;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: #0f0f0f91;
+}
+.fa-play{
+	position: relative;
+	align-items: center;
+	margin-left: -10px;
+}
+.artist:hover .play-button{
+	opacity: 1;
+}
+
+.play-button a{
+	color: white;
+	text-decoration: none;
+}
+.play-button a i{
+	margin-top: 50%;
+}
+.play-button a:hover{
+	color: red;
+}
+
+/*----------------------------------------------popular-artist end----------------------------------------------*/
+
+
+/*----------------------------------------------stations start----------------------------------------------*/
+.stations{
+	height: 20vh;
+	width: 100%;
+	background-color: #101642;
+}
+.station-container{
+	height: 90%;
+	width: 13%;
+}
+.station-logo{
+	background-image: url(icons/stations.png);
+}
+.love{
+	background-image: url(icons/love.png);
+}
+.retro{
+	background-image: url(icons/retro.png);
+}
+.chill{
+	background-image: url(icons/chill.png);
+}
+.workout{
+	background-image: url(icons/workout.png);
+}
+.rock{
+	background-image: url(icons/rock.png);
+}
+.pop{
+	background-image: url(icons/pop.png);
+}
+.staion{
+	height: 100%;
+	width:100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+/*----------------------------------------------stations end----------------------------------------------*/
+
+/*----------------------------------------------popular music start----------------------------------------------*/
+
+.popular{
+	display: flex;
+	height: 35vh;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 1%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.popular-music{
+	height: 90%;
+	width: 30%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popular-music:hover{
+	opacity: 0.6;
+}
+
+.popular-music a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-top: 7%;
+}
+
+#party{
+	background-image: url(icons/party.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#electronic{
+	background-image: url(icons/electronic.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#road-trip{
+	background-image: url(icons/road-trip.jpg);
+	background-size: cover;
+	background-position: center;
+}
+/*----------------------------------------------popular music end----------------------------------------------*/
+
+
+/*----------------------------------------------latest-english start----------------------------------------------*/
+
+.latest-english{
+	height: 45vh;
+	width: 100%;
+}
+.latest-container{
+	margin: 4px;
+	height: 75%;
+	width: 15%;
+}
+.latest-container a{
+	text-decoration:none;
+}
+.latest{
+	height: 80%;
+	width:100%;
+	background-size: contain,cover;
+	background-repeat: no-repeat;
+}
+
+.song1{
+	background-image: url(music-covers/icon1.png);
+}
+.song2{
+	background-image: url(music-covers/icon2.png);
+}
+.song3{
+	background-image: url(music-covers/icon3.png);
+}
+.song4{
+	background-image: url(music-covers/icon4.png);
+}
+.song5{
+	background-image: url(music-covers/icon1.png);
+}
+.song6{
+	background-image: url(music-covers/icon2.png);
+}
+
+
+/*----------------------------------------------latest-english end----------------------------------------------*/
+
+/*----------------------------------------------latest-hindi start----------------------------------------------*/
+.latest-hindi{
+	height: 45vh;
+	width: 100%;
+	margin-bottom: 7vh;
+}
+/*----------------------------------------------latest-hindi end----------------------------------------------*/
+
+/*-------------------------------------------footer music-player start-------------------------------------------*/
+#music-player{
+	background-color: var(--player-color);
+	height: 70px;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 92vh;
+	margin-left: 22px;
+	padding: 2px;
+	opacity: 1;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1;
+}
+
+#thumbnail{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	align-items: center;
+}
+#thumbnail ul{
+	list-style: none;
+}
+			
+.john-lennon{
+	height: 100%;
+	width: 25%;
+	content: url(images/john-lennon.jpg);
+	background-size: contain;
+	margin-left: 25px;
+}
+
+#song-thumbnail a{
+	text-decoration: none;
+}
+
+#song-thumbnail ul{
+	margin-left: -8%;
+	padding-bottom: 2px;
+}
+
+.current-song a{
+	font-size: larger;
+	color: white;
+}
+
+.current-song a:hover{
+	border-bottom: 1px solid white;
+}
+
+.current-singer a{
+	font-size: small;
+	color: grey;
+	text-decoration: none;
+}
+
+.current-singer a:hover{
+	color: red;
+}
+
+.fa-heart{
+	margin-left: 21%;
+}
+#player-controls{
+	height: 100%;
+	width: 30%;
+}
+#controls{
+	margin: 0% 15% 3% 15%;
+	height: 70%;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.buttons{
+	height: 15%;
+	width: 20%;
+	
+}
+.hover-red:hover{
+	color: red;
+}
+.play-pause{
+	height: 20%;
+	margin-bottom: 3%;
+}
+.play-pause i{
+	font-size: 2rem;
+}
+#progress-bar{
+	width: 100%;
+	margin-top: -10px;
+}
+#progress-bar progress{
+	width: 75%;
+}
+#progress-bar::before {
+  content: "1:39";
+  color: lightgray;
+}
+#progress-bar::after {
+  content: "4:44";
+  color: lightgray;
+}
+#other-controls{
+	width: 20%;
+	height: 30%;
+	margin: 6px;
+}
+.volume-control{
+	width: 50%;
+	margin-right: 10px;
+}
+.volume-control progress{
+	width: 100%;
+	
+}
+/*-------------------------------------------footer music-player start-------------------------------------------*/
+
+
+/*----------------------------------------------Aside section start----------------------------------------------*/
+.aside{
+	margin-top: 20px;
+	width: 29%;
+
+}
+.aside-container{
+	height: 150vh;
+	overflow-y: scroll;
+}
+.aside-container::-webkit-scrollbar {
+  	display: none;
+}
+
+
+#aside-heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	box-sizing: border-box;
+	position: sticky;
+	margin-bottom: 10px;
+}
+#first-option{
+	background-color: var(--website-background);
+	color: white;
+	border:none;
+	font-size: medium;
+	font-family: sans-serif;
+}
+option{
+	background-color: white;
+	color: black;
+	font-size: medium;
+	font-family: sans-serif;
+}
+option a{
+	text-decoration: none;
+}
+.list-items{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+
+.serial{
+	color: white;
+}
+
+.song-details td{
+	padding: 10px;
+	margin: 1px;
+
+}
+#serial-box{
+	height: 50px;
+	width: 10px;
+}
+#info{
+	height: 50px;
+	width: 100px;
+}
+
+#song-icon{
+	height: 50px;
+	width: 50px;
+}
+
+.song-name{
+	margin-bottom: -5px;
+}
+
+.singer-name{
+	font-size: smaller;
+	color: grey;
+}
+.fa-heart:hover{
+	color: red;
+}
+/*----------------------------------------------Aside section end----------------------------------------------*/
+
+/********************************************End of Main page*****************************************************/
+
+/*------------------------------------------Css for coldplay page start------------------------------------------*/
+
+#current-thumbnail{
+	background-image: linear-gradient(to right bottom, rgba(20,27,65,0), rgba(20,27,65,1));
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+#singer-thumbnail{
+	height: 100%;
+	width: 29%;
+	background-image: linear-gradient(to bottom, rgba(0,0,255,0), rgba(17,23,56,1)),
+	url(images/coldplay-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+}
+#singer-details{
+	height: 100%;
+	width: 69%;
+	display: flex;
+	flex-direction: column;
+}
+.common-property{
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+	flex-wrap: wrap;
+}
+#row4{
+	width: 40%;
+}
+#row4 button{
+	width: 40%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(54,36,176,1), rgba(198,73,224,1));
+	border:none;
+}
+#song-list{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15vh;
+}
+.aside-container1{
+	height: 37vh;
+	overflow-y: scroll;
+}
+.aside-container1::-webkit-scrollbar {
+  	display: none;
+}
+#aside-heading a{
+	text-decoration:none;
+	color: white;
+	font-size: small;
+}
+
+.aside-container2{
+	height: 100vh;
+	overflow-y: scroll;
+}
+.aside-container2::-webkit-scrollbar {
+  	display: none;
+}
+.list-items2{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background-color: #1e442c;
+	margin: 5px;
+}
+.list-items2:hover #info::after{
+	content: "4:44";
+	margin-left: 200%;
+}
+#wishlist-icon{
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.wishlist-margin{
+	margin-top: 10px;
+	margin-left: -10px;
+}
+.fa-plus:hover{
+	color: red;
+}
+/*------------------------------------------Css for coldplay page start------------------------------------------*/
+
+/*------------------------------------------Media query start-----------------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+
+	.right-section{
+		margin: auto;
+		width: 60%;
+		height: auto;
+		padding-bottom: 5%;
+	}
+	aside{
+		width: 39%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+	.right-section{
+		margin: auto;
+		width: 70%;
+		height: auto;
+		padding-bottom: 5%;
+	}
+	aside{
+		width: 29%;
+
+	}
+	.artist{
+	overflow-x: scroll;
+	}
+}
+
+@media screen and (max-width: 846px){
+
+	.right-section{
+		margin: auto;
+		width: 85%;
+		height: auto;
+	}
+	aside{
+		width: 85%;
+		height: auto;
+		margin: auto;
+	}
+	#music-player{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.right-section{
+		margin: auto;
+		width: 95%;
+		height: auto;
+	}
+	aside{
+		width: 95%;
+		
+		height: auto;
+		margin: auto;
+	}
+	body{
+		width: 100vw;
+	}
+	.popular-artist{
+		overflow-x: scroll;
+	}
+	.popular-artist::-webkit-scrollbar {
+  		display: none;
+	}
+	.heading{
+	margin-left: 5%;
+	}
+}
+@media screen and (max-width: 420px){
+	.right-section{
+		margin: auto;
+		width: 420px;
+		min-width: 420px;
+		height: auto;
+	}
+	#aside{
+		width: 420px;
+		height: auto;
+		min-width: 420px;
+		margin: auto;
+	}
+}
+
+
+
+
+/*------------------------------------------Media query end------------------------------------------------------*/
